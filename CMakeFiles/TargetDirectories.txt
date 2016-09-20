@@ -1,0 +1,3 @@
+C:/Users/Jared/OneDrive/School/Fall 2016/CpS310 - Microprocessor Architecture/ArmSim/CMakeFiles/ask.dir
+C:/Users/Jared/OneDrive/School/Fall 2016/CpS310 - Microprocessor Architecture/ArmSim/CMakeFiles/ALL_BUILD.dir
+C:/Users/Jared/OneDrive/School/Fall 2016/CpS310 - Microprocessor Architecture/ArmSim/CMakeFiles/ZERO_CHECK.dir

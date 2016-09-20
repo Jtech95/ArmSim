@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Jared\OneDrive\School\Fall 2016\CpS310 - Microprocessor Architecture\ArmSim\ask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jared\OneDrive\School\Fall 2016\CpS310 - Microprocessor Architecture\ArmSim\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0B1D0D3A-D04F-35F6-9D79-FAF7D5767429}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
