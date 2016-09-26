@@ -4,6 +4,13 @@
 #define ARMSIM_KERNEL_API
 
 #include <stdint.h>
+#include <stddef.h>
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <cstdlib>
+#include <cstring>
+#include <cstdio>
 
 /* The ASKAPI functions must be exported with "C" linkage, even if implemented in C++ */
 #ifdef __cplusplus

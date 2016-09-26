@@ -5,27 +5,20 @@
     Date:	9/16/16
 */
 
-#include <stddef.h>
-#include <iostream>
-#include <vector>
-#include <cmath>
-#include <cstdlib>
-#include <cstring>
-#include <cstdio>
-
 /* ArmSim Kernel/Shell Interface definition */
 #include "askapi.h"
 
 using namespace std;
 
 /* Registers */
-uint32_t regs[16];
+word regs[16];
 
 /* Configuration Flags */
-uint8_t c_flags = 0x00000000;
+byteb c_flags = 0x00000000;
 
 /* Instruction Count*/
-uint32_t IC = 0;
+word IC = 0;
+
 
 char **ask_info(void) {
     char** strings = (char**)malloc(sizeof(char*)*4);
@@ -38,7 +31,6 @@ char **ask_info(void) {
     snprintf(strings[2], 7, "mockup");
     strings[3] = NULL;
 
-    //char *str = new char*("author=jmess107\0api=1.0\0mockup");	// Null-terminator added to the end
     return strings;
 }
 

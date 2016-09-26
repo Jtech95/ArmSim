@@ -1,0 +1,28 @@
+This file specifies the overarching design and architecture patterns used in the simulator.
+
+Architecture
+	Files
+		The definitions for classes and methods will be organized into header files.
+		The implementations of those definitions will be place in a corresponding .cpp file.
+		The GUI will be composed of its own set of files and dependencies.
+	Types
+		Classes will be used for the types of objects including
+			Instructions
+				Will be a hierarchy
+				Will have methods for decode and execute
+			CPU State
+				RAM
+					Will be a vector of unsigned char (bytes) -> (or an array)
+				Registers
+					Will be represented by an array (or vector) of size 16 of uint32_t
+					Operating modes (SVC, USR, IRQ, FIQ, this will also be a hierarchy)
+				Stats
+					This class will store a small amount of statistics pertaining to the current state of the CPU
+			Aliases
+				All registers will be aliased to avoid confusion and possible Out of Range errors
+				Special registers will be aliased with their common usage names (PC, SP, BP, etc.)
+
+Integration
+	The ask.cpp and askapi.h will act as the "controller" in a vague MVC architecture. The Simulator will act as the 
+	model, the Shell as the view, and ask.cpp/askapi.h as the controller. Based on what the controller receives from
+	the view, it will instruct the simulator what to do.
